@@ -44,7 +44,7 @@
    >* 图片 .jpg 在 image 文件夹中，.html 跟 image 在同一目录下：
    >  ​        `<img src="image/*.jpg/"width="300" height="120"/>`
    >*  图片 .jpg 在 image 文件夹中，.html 在 connage 文件夹中，image 跟 connage 在同一目录下：
-   >  ​        `< img src="../image/*.jpg/"width="300" height="120"/>`
+   >    ​        `< img src="../image/*.jpg/"width="300" height="120"/>`
    >
    >4、如果图片来源于网络，那么写绝对路径：
    >​        `<img src="http://static.runoob.com/images/runoob-logo.png" width="300" height="120"/>`
@@ -104,7 +104,16 @@
 
 ##### HTML发送邮件
 ``` html
-<p>这是一个电子邮件链接：<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">发送邮件</a></p><p> <b>注意:</b>  单词之间空格使用 %20 代替，以确保浏览器可以正常显示文本。</p>
+<p>
+    这是一个电子邮件链接：
+   <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+      发送邮件
+   </a>
+</p>
+<p> 
+   <b>注意:</b> 
+      单词之间空格使用 %20 代替，以确保浏览器可以正常显示文本。
+</p>
 ```
 
 ##### HTML` <head>` 元素
@@ -144,14 +153,18 @@
  `<link> `标签通常用于链接到样式表:
 
  ```html
- <head><link rel="stylesheet" type="text/css" href="mystyle.css"></head>
+ <head>
+     <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
  ```
  ##### HTML `<style>` 元素
  `<style>` 标签定义了HTML文档的样式文件引用地址.在`<style> `元素中你也可以直接添加样式来渲染 HTML 文档:
  ```html
-<head><style type="text/css">
-body {background-color:yellow}
-p {color:blue}</style></head>
+<head>
+    <style type="text/css">
+     body {background-color:yellow}
+     p {color:blue}</style>
+</head>
  ```
 
 
@@ -198,7 +211,14 @@ CSS 可以通过以下方式添加到HTML中:
 * 实例
    背景色属性定义一个元素的背景颜色
 ```html
-<body style="background-color:yellow;"> <h2 style="background-color:red;">这是一个标题</h2> <p style="background-color:green;">这是一个段落。</p> </body>
+<body style="background-color:yellow;">
+    <h2 style="background-color:red;">
+        这是一个标题
+    </h2> 
+    <p style="background-color:green;">
+        这是一个段落。
+    </p> 
+</body>
 ```
 3.外部样式
   当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。
