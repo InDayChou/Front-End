@@ -41,11 +41,11 @@
      `<img src="http://static.runoob.com/images/runoob-logo.png" width="300" height="120"/>`
 
 * 如何定义图片带超级链接
-  ```html
- 	<a href="http://www.baidu.com"> 
-	  <img src="http://static.runoob.com/images/runoob-logo.png" width ="300" height="120"> 
-	</a>
-    ```
+ ```html
+<a href="http://www.baidu.com"> 
+<img src="http://static.runoob.com/images/runoob-logo.png" width ="300" height="120"> 
+</a>
+```
  
 ##### HTML元素
 ***
@@ -129,7 +129,7 @@
  ```
  ##### HTML <style> 元素
  <style> 标签定义了HTML文档的样式文件引用地址.在<style> 元素中你也可以直接添加样式来渲染 HTML 文档:
-```html
+ ```html
 <head><style type="text/css">
 body {background-color:yellow}
 p {color:blue}</style></head>
@@ -142,19 +142,19 @@ p {color:blue}</style></head>
  <meta> 一般放置于 <head> 区域
  ###### <meta> 标签- 使用实例
 * 为搜索引擎定义关键词:
-```html
+ ```html
 <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
 ```
 * 为网页定义描述内容:
-```html
+ ```html
 <meta name="description" content="免费 Web & 编程 教程">
 ```
 * 定义网页作者:
-```html
+ ```html
 <meta name="author" content="Runoob">
 ```
 * 每30秒钟刷新当前页面:
-```html
+ ```html
 <meta http-equiv="refresh" content="30">
 ```
 
@@ -199,4 +199,27 @@ alt 属性用来为图像定义一串预备的可替换的文本。替换文本�
 
 ###### HTML 图像- 设置图像的高度与宽度
 height（高度） 与 width（宽度）属性用于设置图像的高度与宽度。属性值默认单位为像素:
+```html
+<img src="pulpit.jpg" alt="Pulpit rock" width="304" height="228">
+```
+提示: 指定图像的高度和宽度是一个很好的习惯。如果图像指定了高度宽度，页面加载时就会保留指定的尺寸。如果没有指定图片的大小，加载页面时有可能会破坏HTML页面的整体布局。
 
+###### HTML <area> 标签的 coords 属性
+
+* **定义和用法**
+coords 属性规定区域的 x 和 y 坐标。coords 属性与 shape 属性配合使用，来规定区域的尺寸、形状和位置。图像左上角的坐标是 "0,0"。
+* **详细解释：**
+<area> 标签的 coords 属性定义了客户端图像映射中对鼠标敏感的区域的坐标。坐标的数字及其含义取决于 shape 属性中决定的区域形状。可以将客户端图像映射中的超链接区域定义为矩形、圆形或多边形等。
+*下面列出了每种形状的适当值：*
+**圆形：shape="circle"，coords="x,y,z"**
+这里的 x 和 y 定义了圆心的位置（"0,0" 是图像左上角的坐标），r 是以像素为单位的圆形半径。
+**多边形:shape="polygon",coords="x1,y1,x2,y2,x3,y3,..."**
+每一对 "x,y" 坐标都定义了多边形的一个顶点（"0,0" 是图像左上角的坐标）。定义三角形至少需要三组坐标；高纬多边形则需要更多数量的顶点。多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。
+**矩形：shape="rectangle"，coords="x1,y1,x2,y2"**
+第一个坐标是矩形的一个角的顶点坐标，另一对坐标是对角的顶点坐标，"0,0" 是图像左上角的坐标。请注意，定义矩形实际上是定义带有四个顶点的多边形的一种简化方法。例如，下面的 XHTML 片段在一个 100x100 像素图像的右下方四分之一处，定义了一个对鼠标敏感的区域，并在图像的正中间定义了一个圆形区域。
+```html
+<map name="map">
+  <area shape="rect" coords="75,75,99,99" nohref="nohref">
+  <area shape="circ" coords="50,50,25" nohref="nohref">
+</map>
+```
