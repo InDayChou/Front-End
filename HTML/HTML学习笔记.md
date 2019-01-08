@@ -11,16 +11,20 @@
 <a href="连接地址">说明</a> 
 ```
 * HTML图像 是通过标签`<img>`来定义的 `<img src=""/>`
+
 * **href和src的区别**
-       (1) href 是hypertext reference的缩写,表示超文本引用,用来建立当前元素与文档之间的联系；常用的有：link，a;
+
+   (1) href 是hypertext reference的缩写,表示超文本引用,用来建立当前元素与文档之间的联系；常用的有：link，a;
        列如:
 
-    ```html
+   ```html
     <link href="reset.css" rel=”stylesheet“/>
-    ```
+   ```
    浏览器会识别该文档为 css 文档，并行下载该文档，并且不会停止对当前文档的处理。这也是建议使用 link，而不采用 @import 加载 css 的原因。
-      (2)  src 是 source 的缩写，src 的内容是页面必不可少的一部分，是引入。src 指向的内容会嵌入到文档中当前标签所在的位置。常用的有：img、script、iframe。
+
+   (2)  src 是 source 的缩写，src 的内容是页面必不可少的一部分，是引入。src 指向的内容会嵌入到文档中当前标签所在的位置。常用的有：img、script、iframe。
       例如:
+
    ```html
     <script src="script.js"></script>
    ```
@@ -29,20 +33,21 @@
 
 * **html与jpg在相同或者不同目录下的处理**
 
-   >1、*.html 文件跟 *.jpg 文件(f盘)在不同目录下：
-    ​    ` <img src="file:///f:/*.jpg" width="300" height="120"/>`     
-   
-   >2、*.html 文件跟 *.jpg 图片在相同目录下：
-       `<img src="*.jpg" width="300" height="120"/>`
-   
-  > 3、*.html 文件跟 *.jpg 图片在不同目录下：
-    *  图片 *.jpg 在 image 文件夹中，*.html 跟 image 在同一目录下：
-       `<img src="image/*.jpg/"width="300" height="120"/>`
-    * 图片 *.jpg 在 image 文件夹中，*.html 在 connage 文件夹中，image 跟 connage 在同一目录下：
-      `<img src="../image/*.jpg/"width="300" height="120"/>`
-
-  >4、如果图片来源于网络，那么写绝对路径：
- ​    `<img src="http://static.runoob.com/images/runoob-logo.png" width="300" height="120"/>`
+   >1、.html 文件跟 .jpg 文件(f盘)在不同目录下：
+   >​        `<img src="file:///f:/.jpg" width="300" height="120">`
+   >
+   >2、.html 文件跟 .jpg 图片在相同目录下：
+   >​        `<img src=".jpg" width="300" height="120">`
+   >
+   >3、.html 文件跟 .jpg 图片在不同目录下：
+   >
+   >* 图片 .jpg 在 image 文件夹中，.html 跟 image 在同一目录下：
+   >  ​        `<img src="image/*.jpg/"width="300" height="120"/>`
+   >*  图片 .jpg 在 image 文件夹中，.html 在 connage 文件夹中，image 跟 connage 在同一目录下：
+   >  ​        `< img src="../image/*.jpg/"width="300" height="120"/>`
+   >
+   >4、如果图片来源于网络，那么写绝对路径：
+   >​        `<img src="http://static.runoob.com/images/runoob-logo.png" width="300" height="120"/>`
 
 * 如何定义图片带超级链接
  ```html
