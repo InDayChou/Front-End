@@ -9,8 +9,8 @@
 ```html
 <a href="连接地址">说明</a> 
 ```
-* HTML图像 是通过标签<img>来定义的 <img src=""/>
-*  **href和src的区别**
+* HTML图像 是通过标签`<img>`来定义的 `<img src=""/>`
+*  **href和src的区别**
     (1) href 是hypertext reference的缩写,表示超文本引用,用来建立当前元素与文档之间的联系；常用的有：link，a;
     列如:
     ```html
@@ -77,7 +77,8 @@
 
 属性值应该始终被包括在引号内。
 双引号是最常用的，不过使用单引号也没有问题。
-![info](data:image/gif;base64,R0lGODlhDwAPALMAAP//////mP//gJmZmf//YP//SP//MP//GPDwENjYCHBwcAAAAMDAwAAAAAAAAAAAACH+aGljb24zLmdpZiBmb3IgdXNlIGluIFVCQg0KDQooQykgMTk5OSBQaGlsaXBwIEVzc2VsYmFjaCAocGxlQGdteC5uZXQpDQpodHRwOi8vd3d3Lm50Z2FtZXBhbGFjZS5pc2Nvb2wubmV0ACH5BAkIAAwALAAAAAAPAA8AAARLkMlJKxt06DzxDUTheZMYCKEwFNZwFnBxkNIgGHhuqJmB/ECEgWZDJI5HBK+XWDQTCJpEVHhSKyPEIlrrdAgLAklaU5BbZktrU4kAADs=)提示:&nbsp;在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：`name='John "ShotGun" Nelson'`
+![info](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwdEVYdENvbW1lbnQAaWNvbjMuZ2lmIGZvciB1c2UgaW4gVUJCDQoNCihDKSAxOTk5IFBoaWxpcHAgRXNzZWxiYWNoIChwbGVAZ214Lm5ldCkNCmh0dHA6Ly93d3cubnRnYW1lcGFsYWNlLmlzY29vbC5uZXSWpIb9AAAAsklEQVQ4T7WRsRHDIAxFKVOmzBiMwRgZgRE8RthGY3gMb6D4o4N8BXCRuxTvJEt6ls4OIqK/UuVSytBArTHrIfbNPIRc9XXyPElDr+Xu7DZo4tZl5FZPfRY42YuQmIfbCtzZJsUL7IKFHPU47kvQv5C3OrTvtwGTF5s/L4h1OITgImQWgZPxYewFyYlc53l3NufYBPl7I+dV5kJ7xj+GjDjrI7qzGQzknAeR+Z/cmPVFRN/q3bWGj5NEbAAAAABJRU5ErkJggg==)
+提示:&nbsp;在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：`name='John "ShotGun" Nelson'`
 
 ###### HTML属性参考
 
