@@ -2,9 +2,9 @@
 # HTML学习
 ####  HTML基础
 1.HTML标题 是通过`<h1>-<h6>`来定义的
-    
+​    
 2.HTML段落 是通过标签`<p>`来定义的
-    
+​    
 3.HTML连接 是通过标签`<a>`来定义的 
 ```html
 <a href="连接地址">说明</a> 
@@ -22,17 +22,17 @@
    ```html
     <script src="script.js"></script>
    ```
-   浏览器解析到该元素时，会暂停浏览器的渲染，直到该资源加载完毕。这也是将js脚本放在底部而不是头部得原因。
+     浏览器解析到该元素时，会暂停浏览器的渲染，直到该资源加载完毕。这也是将js脚本放在底部而不是头部得原因。
    简而言之，src 用于替换当前元素；href 用于在当前文档和引用资源之间建立联系。
 
 * **html与jpg在相同或者不同目录下的处理**
 
    >1、*.html 文件跟 *.jpg 文件(f盘)在不同目录下：
-        ` <img src="file:///f:/*.jpg" width="300" height="120"/>`     
+    ​    ` <img src="file:///f:/*.jpg" width="300" height="120"/>`     
    
    >2、*.html 文件跟 *.jpg 图片在相同目录下：
        `<img src="*.jpg" width="300" height="120"/>`
-    
+   
   > 3、*.html 文件跟 *.jpg 图片在不同目录下：
     *  图片 *.jpg 在 image 文件夹中，*.html 跟 image 在同一目录下：
        `<img src="image/*.jpg/"width="300" height="120"/>`
@@ -40,15 +40,15 @@
       `<img src="../image/*.jpg/"width="300" height="120"/>`
 
   >4、如果图片来源于网络，那么写绝对路径：
-     `<img src="http://static.runoob.com/images/runoob-logo.png" width="300" height="120"/>`
+ ​    `<img src="http://static.runoob.com/images/runoob-logo.png" width="300" height="120"/>`
 
 * 如何定义图片带超级链接
  ```html
 <a href="http://www.baidu.com"> 
 <img src="http://static.runoob.com/images/runoob-logo.png" width ="300" height="120"> 
 </a>
-```
- 
+ ```
+
 ##### HTML元素
 ***
 |开始标签|元素内容|结束标签|
@@ -77,8 +77,11 @@
 
 属性值应该始终被包括在引号内。
 双引号是最常用的，不过使用单引号也没有问题。
-![info](info.gif "提示图标")
-提示:&nbsp;在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：`name='John "ShotGun" Nelson'`
+![info](data:img/jpg;base64,R0lGODlhDwAPALMAAP//////mP//gJmZmf//YP//SP//MP//GPDwENjYCHBwcAAAAMDAwAAAAAAA
+AAAAACH+aGljb24zLmdpZiBmb3IgdXNlIGluIFVCQg0KDQooQykgMTk5OSBQaGlsaXBwIEVzc2Vs
+YmFjaCAocGxlQGdteC5uZXQpDQpodHRwOi8vd3d3Lm50Z2FtZXBhbGFjZS5pc2Nvb2wubmV0ACH5
+BAkIAAwALAAAAAAPAA8AAARLkMlJKxt06DzxDUTheZMYCKEwFNZwFnBxkNIgGHhuqJmB/ECEgWZD
+JI5HBK+XWDQTCJpEVHhSKyPEIlrrdAgLAklaU5BbZktrU4kAADs=)提示:&nbsp;在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：`name='John "ShotGun" Nelson'`
 
 ###### HTML属性参考
 
@@ -100,8 +103,8 @@
   **<head> 元素**包含了所有的头部标签元素。
   在 **<head>元素**中你可以插入**脚本（scripts） , 样式文件（CSS）**，及各种meta信息。
   可以添加在头部区域的元素标签为: **<title>**, **<style>**, **<meta>**, **<link>**, **<script>**, **<noscript>**, and **<base>**
-  
-  
+
+
 | 标签 |  描述 |
 | --- | --- |
 | `<head>`|  定义了文档的信息 |
@@ -111,7 +114,7 @@
 | `<meta>`|定义了HTML文档中的元数据|
 | `<script>`|定义了客户端的脚本文件|
 |`<style>`|定义了HTML文档的样式文件|
-  
+
 ###### HTML `<title>` 元素
  <title> 标签定义了不同文档的标题。
  <title> 在 HTML/XHTML 文档中是必须的。
@@ -119,7 +122,7 @@
  * 定义了浏览器工具栏的标题
  * 当网页添加到收藏夹时，显示在收藏夹中的标题
  * 显示在搜索引擎结果页面的标题
- 
+
  ###### HTML `<base>` 元素
  <base> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接:
 ```html
@@ -149,19 +152,19 @@ p {color:blue}</style></head>
 * 为搜索引擎定义关键词:
  ```html
 <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
-```
+ ```
 * 为网页定义描述内容:
  ```html
 <meta name="description" content="免费 Web & 编程 教程">
-```
+ ```
 * 定义网页作者:
  ```html
 <meta name="author" content="Runoob">
-```
+ ```
 * 每30秒钟刷新当前页面:
  ```html
 <meta http-equiv="refresh" content="30">
-```
+ ```
 
 ##### HTML样式-CSS
 
@@ -187,7 +190,7 @@ CSS 可以通过以下方式添加到HTML中:
   当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。
   ```html
 <head><link rel="stylesheet" type="text/css" href="mystyle.css"></head>
-```
+  ```
 ##### HTML样式-图像
 
 ###### HTML图像标签（`<img>`）和源属性（Src）
