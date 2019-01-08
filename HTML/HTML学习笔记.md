@@ -77,7 +77,7 @@
 
 属性值应该始终被包括在引号内。
 双引号是最常用的，不过使用单引号也没有问题。
-![info](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwdEVYdENvbW1lbnQAaWNvbjMuZ2lmIGZvciB1c2UgaW4gVUJCDQoNCihDKSAxOTk5IFBoaWxpcHAgRXNzZWxiYWNoIChwbGVAZ214Lm5ldCkNCmh0dHA6Ly93d3cubnRnYW1lcGFsYWNlLmlzY29vbC5uZXSWpIb9AAAAsklEQVQ4T7WRsRHDIAxFKVOmzBiMwRgZgRE8RthGY3gMb6D4o4N8BXCRuxTvJEt6ls4OIqK/UuVSytBArTHrIfbNPIRc9XXyPElDr+Xu7DZo4tZl5FZPfRY42YuQmIfbCtzZJsUL7IKFHPU47kvQv5C3OrTvtwGTF5s/L4h1OITgImQWgZPxYewFyYlc53l3NufYBPl7I+dV5kJ7xj+GjDjrI7qzGQzknAeR+Z/cmPVFRN/q3bWGj5NEbAAAAABJRU5ErkJggg==)
+![info](info.gif "提示图标")
 提示:&nbsp;在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：`name='John "ShotGun" Nelson'`
 
 ###### HTML属性参考
