@@ -65,7 +65,10 @@
 | `<br> `|换行||
 
 开始标签被称为**起始标签**,结束标签被称为**闭合标签**
+***
+
 #### HTML语法
+
 * HTML 元素以开始标签起始
 * HTML 元素以结束
 * 标签终止元素的内容是开始标签与结束标签之间的内容
@@ -85,7 +88,9 @@
 
 属性值应该始终被包括在引号内。
 双引号是最常用的，不过使用单引号也没有问题。
-![info](info.gif "")提示:在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：`name='John "ShotGun" Nelson'`
+![info](image/info.gif "")提示:在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：`name='John "ShotGun" Nelson'`
+
+***
 
 #### HTML属性参考
 
@@ -99,6 +104,8 @@
 |title|描述了元素的额外信息 (作为工具条使用)|
 
 更对属性参考:[html全局属性参考手册](http://www.runoob.com/tags/ref-standardattributes.html)
+
+***
 
 #### HTML元素详解
 
@@ -116,7 +123,10 @@
 </p>
 ```
 
+***
+
 ##### HTML` <head>` 元素
+
   **`<head>` 元素**包含了所有的头部标签元素。
   在 **`<head>`元素**中你可以插入**脚本（scripts） , 样式文件（CSS）**，及各种meta信息。
   可以添加在头部区域的元素标签为: **`<title>`**, **`<style>`**, **`<meta>`**, **`<link>`**, **`<script>`**, **`<noscript>`**, and **`<base>`**
@@ -132,7 +142,10 @@
 | `<script>`|定义了客户端的脚本文件|
 |`<style>`|定义了HTML文档的样式文件|
 
+***
+
 ##### HTML `<title>` 元素
+
  `<title>` 标签定义了不同文档的标题。
  `<title>` 在 HTML/XHTML 文档中是必须的。
  `<title>` 元素:
@@ -141,14 +154,18 @@
  * 当网页添加到收藏夹时，显示在收藏夹中的标题
  * 显示在搜索引擎结果页面的标题
 
+***
 
  ##### HTML `<base>` 元素
+
  <base> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接:
 ```html
  <head><base href="http://www.runoob.com/images/" target="_blank"></head>
  ```
+***
 
  ##### HTML `<link>` 元素
+
 ` <link>` 标签定义了文档与外部资源之间的关系。
  `<link> `标签通常用于链接到样式表:
 
@@ -157,7 +174,10 @@
      <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
  ```
+***
+
  ##### HTML `<style>` 元素
+
  `<style>` 标签定义了HTML文档的样式文件引用地址.在`<style> `元素中你也可以直接添加样式来渲染 HTML 文档:
  ```html
 <head>
@@ -167,8 +187,10 @@
 </head>
  ```
 
+***
 
 ##### HTML `<meta>` 元素
+
  meta标签描述了一些基本的元数据。
  `<meta>` 标签提供了元数据.元数据也不显示在页面上，但会被浏览器解析。
  META 元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者，和其他元数据。元数据可以使用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他Web服务。
@@ -225,6 +247,8 @@ CSS 可以通过以下方式添加到HTML中:
   ```html
 <head><link rel="stylesheet" type="text/css" href="mystyle.css"></head>
   ```
+***
+
 ##### HTML样式-图像
 
 |   标签   | 描述                       |
@@ -290,6 +314,95 @@ coords 属性规定区域的 x 和 y 坐标。coords 属性与 shape 属性配�
   | *x,y,radius*           | 如果 shape 属性设置为 "circ"，则该值规定圆心的坐标和半径。   |
   | *x1,y1,x2,y2,..,xn,yn* | 如果 shape 属性设置为 "poly"，则该值规定多边形各边的坐标。如果第一个坐标和最后一个坐标不一致，那么为了关闭多边形，浏览器必须添加最后一对坐标。 |
 
-​    
+***
 
+##### HTML `<div> `和`<span>`
+
+###### HTML 区块元素
+
+大多数 HTML 元素被定义为块级元素或内联元素。
+
+块级元素在浏览器显示时，通常会以新行来开始（和结束）。
+
+例如:` <h1>`,` <p>`, `<ul>`, `<table>`
+
+###### HTML 内联元素
+
+内联元素在显示时通常不会以新行开始。
+
+例如: `<b>`,` <td>`,` <a>`, `<img>`
+
+###### HTML `<div>` 元素
+
+HTML `<div>` 元素是**块级元素**，它可用于组合其他 HTML 元素的容器。
+
+`<div>` 元素没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。
+
+
+如果与 CSS 一同使用，`<div> `元素可用于对大的内容块设置样式属性。
+
+`<div>` 元素的另一个常见的用途是文档布局。它取代了使用表格定义布局的老式方法。使用 `<table>` 元素进行文档布局不是表格的正确用法。`<table>` 元素的作用是显示表格化的数据。
+
+###### HTML `<span> `元素
+
+HTML `<span>` 元素是**内联元素**，可用作文本的容器
+
+`<span> `元素也没有特定的含义。
+
+当与 CSS 一同使用时，`<span>` 元素可用于为部分文本设置样式属性。
+
+***
+
+##### HTML 框架
+
+通过使用框架，你可以在同一个浏览器窗口中显示不止一个页面。
+
+**iframe语法:**
+
+```html
+<iframe src="URL"></iframe>
+```
+
+该URL指向不同的网页。
+
+###### Iframe - 设置高度与宽度
+
+height 和 width 属性用来定义iframe标签的高度与宽度。
+
+属性默认以像素为单位, 但是你可以指定其按比例显示 (如："80%")。
+
+**实例:**
+
+```html
+<iframe src="demo_iframe.htm" width="200" height="200"></iframe>
+```
+
+###### Iframe - 移除边框
+
+frameborder 属性用于定义iframe表示是否显示边框。
+
+设置属性值为 "0" 移除iframe的边框:
+
+**实例**
+
+```html
+<iframe src="demo_iframe.htm" frameborder="0"></iframe>
+```
+
+###### 使用iframe来显示目标链接页面
+
+iframe可以显示一个目标链接的页面
+
+目标链接的属性必须使用iframe的属性，如下实例:
+
+**实例**
+
+```html
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p>
+    <a href="http://www.baidu.com" target="iframe_a">
+        BAIDU.COM
+    </a>
+</p>
+```
 
