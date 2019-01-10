@@ -22,6 +22,8 @@ CSS 规则由两个主要的部分构成：选择器，以及一条或多条声�
 
 属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。
 
+
+
 ## CSS Id 和 Class
 
 ### id 和 class 选择器
@@ -76,4 +78,18 @@ class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一�
     text-align:center;
 }
 ```
+
+## CSS 文本格式
+
+## 文本颜色
+
+颜色属性被用来设置文字的颜色。
+
+颜色是通过CSS最经常的指定：
+
+- 十六进制值 - 如: **＃FF0000**
+- 一个RGB值 - 如: **RGB(255,0,0)**
+- 颜色的名称 - 如: **red**
+
+参阅 [CSS 颜色值](http://www.runoob.com/cssref/css-colors-legal.html) 查看完整的颜色值。
 
