@@ -74,3 +74,14 @@
 * CleanLifeCycle 清理生命周期   clean
 * defaultLifeCycle 默认生命周期   compile,test,package,install,deploy
 * siteLifeCycle  站点生命周期  site
+
+## Maven项目依赖的范围
+
+![image](../JAVA学习/Maven依赖的范围.png)
+
+如果使用到Tomcat中自带的jar包,将项目中依赖作用范围设置为:provided
+
+## Maven的概念模型
+
+![img](../Java学习/Maven的概念模型.png)
+
